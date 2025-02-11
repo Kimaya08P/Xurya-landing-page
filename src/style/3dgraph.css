@@ -1,0 +1,23 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.app-container {
+  @apply flex flex-col min-h-screen bg-gray-900 text-white p-6;
+}
+
+h1 {
+  @apply text-3xl font-bold text-center mb-6;
+}
+
+.chart-container {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-11/12 mx-auto;
+}
+
+.chart {
+  @apply bg-gray-800 p-5 rounded-xl shadow-lg h-[500px] md:h-[600px];
+}
+
+.js-plotly-plot {
+  @apply w-full h-full;
+}

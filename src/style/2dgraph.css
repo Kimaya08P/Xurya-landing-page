@@ -1,0 +1,27 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.graph-container {
+  @apply flex flex-col items-center justify-center w-full max-w-5xl mx-auto p-6 bg-white shadow-2xl rounded-2xl border border-gray-200 transition-transform duration-300 hover:scale-105;
+}
+
+.chart-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+}
+
+.graph-title {
+  @apply text-2xl font-semibold text-gray-900 mb-4 tracking-wide;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .graph-container {
+    @apply bg-gray-900 border-gray-700;
+  }
+  .graph-title {
+    @apply text-white;
+  }
+}
